@@ -13,7 +13,8 @@ public class Task
     [SerializeField] private string description;
     [SerializeField] private GameObject deliveryPoint;
     [SerializeField] private int reward;
- 
+    
+    public GameObject GetDeliveryPoint => deliveryPoint;
     public Task(string title, string description, GameObject deliveryPoint, int reward)
     {
         this.title = title;
